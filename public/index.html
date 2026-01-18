@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messaging</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Left Panel: Online Users + Activity + Leave Button -->
+        <div id="left-panel">
+            <h3>Online Users</h3>
+            <button id="theme-toggle">Dark Mode</button>
+            <a href="index2.html">
+                <button id="homeBtn">Grab Some Info for debate</button>
+            </a>
+            <div id="online-users"></div>
+        
+            <h3>Activity</h3>
+            <div id="activity-box"></div>
+        
+            <button id="leave-btn">Leave Chat</button>
+        </div>
+        
+    
+        <!-- Right Panel: Messages + Input -->
+        <div id="right-panel">
+            <div id="messages"></div>
+    
+            <div id="input-area">
+                <input id="msg-input" placeholder="Type a message">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="todo.js"></script>
+<!-- <script src="client.js"></script> -->
+</body>
+</html>
